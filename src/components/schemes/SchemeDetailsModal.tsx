@@ -108,9 +108,8 @@ export const SchemeDetailsModal: React.FC<SchemeDetailsModalProps> = ({
                     <p className="font-semibold text-[#123B8F]">{doc.name[language]}</p>
                     <p className="text-[10px] text-[#48658F]">Issuer: {doc.issuingAuthority}</p>
                   </div>
-                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
-                    doc.isMandatory ? 'bg-[#F0ECFF] text-[#5B3FD3] border border-[#EDE9FE]' : 'bg-slate-100 text-[#48658F]'
-                  }`}>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${doc.isMandatory ? 'bg-[#F0ECFF] text-[#5B3FD3] border border-[#EDE9FE]' : 'bg-slate-100 text-[#48658F]'
+                    }`}>
                     {doc.isMandatory ? 'Mandatory' : 'Optional'}
                   </span>
                 </div>
